@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="javascript.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <p id="text">Hello World</p>
     
     <!-- making a test button with inline Javascript lesson 86 -->
     <!-- inline is very messy always keep styles and logic separate! -->
@@ -20,6 +20,17 @@
         alert("Page is Loaded!")
 
     </script> -->
+
+    <script>
+        
+        // Lesson 90 Accessing Elements - single line comment
+        document.getElementById("text").innerHTML = "Hello Nick!";
+        /*   This is 
+            a multiline
+            comment 
+        */
+
+    </script>
 
 </body>
 </html>
