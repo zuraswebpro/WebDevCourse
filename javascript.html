@@ -11,6 +11,19 @@
 
     <button id="myButton">Change Text</button>
     
+    <div>
+        <p id="secondParagraph">Javascript is ...</p>
+    </div>
+
+    <button id="secondButton">Lesson 94 Button</button>
+
+
+    <p id="emptyParagraph"></p>
+
+
+    <button id="createParagraph">Create Text</button>
+
+    
     <!-- making a test button with inline Javascript lesson 86 -->
     <!-- inline is very messy always keep styles and logic separate! -->
     <!-- <button class="button" onclick="alert('Hi!')">Click Me!!!</button> -->
@@ -23,7 +36,7 @@
 
     </script> -->
 
-    <script>
+    <script type="text/javascript">
         
         // Lesson 90 Accessing Elements - single line comment
         // document.getElementById("text").innerHTML = "Hello Nick!";
@@ -36,6 +49,19 @@
         document.getElementById('myButton').onclick = function() {
 
             document.getElementById("text").innerHTML = "Hello Nick!";
+
+        }
+
+            // Lesson 94 make second button and change text
+            document.getElementById('secondButton').onclick = function() {
+
+                document.getElementById('secondParagraph').innerHTML = "I think " + document.getElementById('secondParagraph').innerHTML + " awesome!";
+
+            }
+
+        document.getElementById('createParagraph').onclick = function() {
+
+            document.getElementById('emptyParagraph').innerHTML = "Hi there!";
 
         }
 
