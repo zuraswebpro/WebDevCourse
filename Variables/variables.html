@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    
+    <input type="text" id="textInput">
+    
+    <button id="textChanger">Change the Text</button>
+
+    <p id="testText">this is some text</p>
+
+
+    <script type="text/javascript">
+
+        // Defining the Variable
+        let x = 5;
+
+        x = 20; // Updating the variable
+
+        console.log(x);
+
+        let name = "Nick"; // Variable String
+
+        console.log(name);
+
+
+        document.getElementById("textChanger").onclick = function() {
+
+            let textEntered = "";
+
+            textEntered = document.getElementById("textInput").value;
+
+            document.getElementById("testText").innerHTML = textEntered;
+        }
+
+    </script>
+</body>
+</html>
