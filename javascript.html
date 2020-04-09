@@ -23,6 +23,10 @@
 
     <button id="createParagraph">Create Text</button>
 
+    <p id="moreText">This is some text</p>
+
+    <button id="styleText">Style Text</button>
+
     
     <!-- making a test button with inline Javascript lesson 86 -->
     <!-- inline is very messy always keep styles and logic separate! -->
@@ -64,6 +68,17 @@
             document.getElementById('emptyParagraph').innerHTML = "Hi there!";
 
         }
+
+        // Lesson 96 Manipulating Styles with Javascript
+        document.getElementById("styleText").onclick = function () {
+
+            document.getElementById("moreText").style.fontSize = "50px"; // Change font size
+
+            // document.getElementById("moreText").style.display = "none"; // Make it disappear
+
+        }
+
+
 
     </script>
 
