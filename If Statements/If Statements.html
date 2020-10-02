@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If / Else Statements!</title>
+</head>
+
+<body>
+
+    <p>What is the magic word?</p>
+
+    <input type="text" id="magicWord">
+
+    <p><button id="checkMagicWord">Submit!</button></p>
+
+
+
+    <script type="text/javascript">
+
+        //   let x = 2;
+
+        //   if (x == 1) {
+
+        //     alert("x is 1!");
+
+        //   } else {
+
+        //     alert("x is not 1!");
+
+        //   }
+
+        document.getElementById("checkMagicWord").onclick = function() { // the function for the submit button
+
+            var magicWordEntered = document.getElementById("magicWord").value; // getting value from the input
+
+            var magicWord = "Mellon";
+
+            if (magicWordEntered == "Mellon") {
+
+                alert("Enter Friend!");
+    
+        }   else {
+
+            alert("Death to the Enemy!");
+        }
+
+        
+        }
+        
+
+
+    </script>
+
+</body>
+</html>
