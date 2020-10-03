@@ -8,19 +8,27 @@
 <body>
     
 
+    <div id="tweetDiv"></div>
 
 
 
 
 
 
+<script type="text/javascript">
 
-<script>
+    var tweetString = ""; // give variables a value so you don't get undefined errors
 
+    var tweets = ["Hi everyone!", "I love cornflakes!", "Night night :)", "Sweet dreams!"]; // array
 
+    for (var i = 0; i < tweets.length; i++) { // when amount of array is unknown you can use .length for loop
 
+        tweetString = tweetString + "<p>" + tweets[i] + "</p>";
 
-    
+    } // looping through an array with a for loop.
+
+    document.getElementById("tweetDiv").innerHTML = tweetString;
+
 </script>
 
 </body>
