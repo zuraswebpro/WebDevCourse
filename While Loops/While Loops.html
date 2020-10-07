@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loops!</title>
+</head>
+<body>
+    
+    <!-- <div id="tweetDiv"></div> // while loops example div -->
+
+    <p>How many fingers are you holding up?</p>
+
+    <p>
+        <select name="number" id="myNumber">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+         </select>
+    </p>    <!--  made a drop down so only 1-5 can be selected and not crash browser -->
+    
+    
+    <p>    
+        <button id="guess">Guess!</button>
+    </p>
+    
+
+
+<script type="text/javascript">
+
+    /* var tweetString = "";
+
+     var tweets = ["Hi everyone!", "I love cornflakes!", "Night night :)", "Sweet Dreams!"];
+
+         var i = 0;
+
+        while (i < tweets.length) {
+            tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+
+             i++;
+        
+         }
+
+         document.getElementById("tweetDiv").innerHTML = tweetString; */ // while loops example!
+
+
+         document.getElementById("guess").onclick = function() {
+
+            var myNumber = document.getElementById("myNumber").value;
+
+            var gotIt = false;
+
+            var numberOfGuesses = 1;
+
+            while (gotIt == false) {
+
+                var guess = Math.random();
+
+                guess = guess * 6;
+
+                guess = Math.floor(guess);
+
+                if (guess == myNumber) {
+
+                    gotIt = true;
+
+                    alert ("Got it! It was a " + guess + ". It took me " + numberOfGuesses + " guesses!");
+
+                        // computer is correct
+
+                } else {
+
+                    numberOfGuesses++;
+                    // Computer is wrong
+
+
+                }
+
+    
+            }
+
+         }
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
